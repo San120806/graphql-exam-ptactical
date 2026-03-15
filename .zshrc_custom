@@ -1,0 +1,21 @@
+# Custom alias for GraphQL project
+# Add this to your ~/.zshrc file to have the 'gql' command available
+
+# Quick command to navigate and start server
+alias gql-start='cd /Users/saniyakapure/Desktop/graphql-exm && source venv/bin/activate && ./server.sh'
+
+# Quick command to just activate venv
+alias gql-activate='cd /Users/saniyakapure/Desktop/graphql-exm && source venv/bin/activate && echo "" && echo "✅ Virtual environment activated!" && echo "" && echo "🚀 To start server, run: ./server.sh" && echo "" && echo "🌐 Server URL: http://localhost:8000/graphql" && echo ""'
+
+# Function to show server link
+gql-link() {
+    echo ""
+    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    echo "  🌐 GraphQL Playground:"
+    echo ""
+    echo "  👉 http://localhost:8000/graphql"
+    echo "  👉 http://127.0.0.1:8000/graphql"
+    echo ""
+    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    echo ""
+}
